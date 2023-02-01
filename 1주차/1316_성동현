@@ -1,0 +1,15 @@
+def groupword(n):
+    for i in range(n):
+        a=list(input())
+        for z in range(len(a)-1):
+            if a[z]==a[z+1]:
+                pass
+            elif a[z] in a[z+2:]:
+                n-=1
+                break
+    print(n)
+
+
+if __name__=="__main__":
+    n=int(input())
+    groupword(n)
